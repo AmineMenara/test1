@@ -5,7 +5,7 @@ var scanner = new Instascan.Scanner({
 });
 
 scanner.addListener('scan', function (content) {
-  window.location.href = 'valider.php?qrcode=' + content;
+  window.location.href = 'http://105.155.253.15:12095/qrcode?qrcode=' + content;
   document.getElementById('preview').classList.add('remove-detail');
 });
 
